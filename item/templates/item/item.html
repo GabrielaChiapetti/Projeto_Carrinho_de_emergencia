@@ -1,0 +1,16 @@
+{% extends 'global/base.html'%}
+
+{%block content%}
+    <div class="single-item">
+        <h1 class="single-item-name">
+            {{ item.item }}
+        </h1>
+
+
+        <p><b>ID:</b> {{ item.id }}</p>
+        <p><b>Categoria:</b> {{ item.category.name}}</p>
+        <p><b>Data de validade:</b> {{ item.expiration_date }}</p>
+        <p><b>Quantidade:</b> {{ item.amount }}</p>
+        <p><b>Adicionado em :</b> {{ item.created_date }}</p>
+    </div>
+{%endblock content%}

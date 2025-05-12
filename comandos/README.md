@@ -1,3 +1,6 @@
+Rodas server: 
+python manage.py runserver
+
 Configurar o git
 
 git config --global user.name 'Seu nome'
@@ -6,7 +9,8 @@ git config --global init.defaultBranch main
 python manage.py startapp contact
 
 # Configure o .gitignore
-git init
+git initpython manage.py runserver
+
 git add .
 git commit -m 'Mensagem'
 git log
@@ -20,8 +24,7 @@ pip install django
 django-admin startproject project .
 python manage.py startapp contact
 
-Migrando a base de dados do Django
-
+Migrando a base de dados do Django: a cada mudança devemos colocar esse código
 python manage.py makemigrations
 python manage.py migrate
 
